@@ -4,9 +4,10 @@ $lighter-gray-gradient: rgba(0, 0, 0, .3);
 $light-gray-gradient: rgba(0, 0, 0, .3);
 
 header {
-  background-image: linear-gradient($lighter-gray-gradient, $light-gray-gradient), url('../mountain2.jpg');
+  background-image: linear-gradient($lighter-gray-gradient, $light-gray-gradient), url('../shared-styles/images/mountain-background.jpg');
   background-position: center;
   background-size: cover;
+  box-shadow: 0 5px 5px -5px $gray;
   display: flex;
   flex-direction: column;
   height: 100vh;
