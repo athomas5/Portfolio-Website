@@ -1,3 +1,16 @@
+// Colors
+$gray: rgba(0, 0, 0, .7);
+$dark-gray: rgba(0, 0, 0, 1);
+$white: #fff;
+
 // Viewports
-$viewport-tablet: 768px;
+$viewport-tablet: 480px;
 $viewport-desktop: 1140px;
+
+* {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../mountain2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .nav-bar {
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    .nav-link {
+      color: #fff;
+      display: inline-block;
+      font-size: 13px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      opacity: 1;
+
+      &:hover {
+        border-bottom: solid 2px #fff;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .head-main {
+    padding: 0 20px;
+    text-align: center;
+
+    .name {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: .05em;
+      padding-bottom: 20px;
+    }
+
+    .kicker {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: .05em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

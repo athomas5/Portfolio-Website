@@ -1,11 +1,11 @@
 @import './shared-styles/sass';
 
-// @import './shared-styles/mobile';
+@import './shared-styles/mobile';
 
 @media (min-width: $viewport-tablet) {
-  // @import './shared-styles/tablet';
+  @import './shared-styles/tablet';
 }
 
 @media (min-width: $viewport-desktop) {
-  // @import './shared-styles/desktop';
+  @import './shared-styles/desktop';
 }
