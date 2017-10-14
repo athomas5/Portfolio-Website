@@ -1,12 +1,17 @@
+@import '../../shared-styles/sass';
+
+$lighter-gray-gradient: rgba(0, 0, 0, .3);
+$light-gray-gradient: rgba(0, 0, 0, .3);
+
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('../mountain2.jpg');
+  background-image: linear-gradient($lighter-gray-gradient, $light-gray-gradient), url('../mountain2.jpg');
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   justify-content: center;
+  position: relative;
 
   .nav-bar {
     float: right;
@@ -15,15 +20,15 @@ header {
     top: 30px;
 
     .nav-link {
-      color: #fff;
+      color: $white;
       display: inline-block;
       font-size: 13px;
       margin-left: 10px;
-      text-transform: uppercase;
       opacity: 1;
+      text-transform: uppercase;
 
       &:hover {
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px $white;
         padding-bottom: 4px;
       }
     }
@@ -34,7 +39,7 @@ header {
     text-align: center;
 
     .name {
-      color: #fff;
+      color: $white;
       font-size: 40px;
       font-weight: 300;
       letter-spacing: .05em;
@@ -42,7 +47,7 @@ header {
     }
 
     .kicker {
-      color: #fff;
+      color: $white;
       font-size: 12px;
       font-weight: 300;
       letter-spacing: .05em;
