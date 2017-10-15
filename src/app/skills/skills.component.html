@@ -1,3 +1,25 @@
-<p>
-  skills works!
-</p>
+<section class="skills-container">
+  <h1 class="skills-header">Skills</h1>
+  <div class="border-bottom"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="skill-circle col-xs-6 col-sm-3">
+        <app-skill-circle [precentage]="this.precentageJavaScript" [circleText]="this.circleTextJavaScript"></app-skill-circle>
+        <p class="technology">JavaScript</p>
+      </div>
+      <div class="skill-circle col-xs-6 col-sm-3">
+        <app-skill-circle [precentage]="this.precentageAngular" [circleText]="this.circleTextAngular"></app-skill-circle>
+        <p class="technology">Angular</p>
+      </div>
+      <div class="skill-circle col-xs-6 col-sm-3">
+        <app-skill-circle [precentage]="this.precentageHTML" [circleText]="this.circleTextHTML"></app-skill-circle>
+        <p class="technology">HTML/CSS</p>
+      </div>
+      <div class="skill-circle col-xs-6 col-sm-3">
+        <app-skill-circle [precentage]="this.precentagePHP" [circleText]="this.circleTextPHP"></app-skill-circle>
+        <p class="technology">PHP</p>
+      </div>
+    </div>
+  </div>
+</section>

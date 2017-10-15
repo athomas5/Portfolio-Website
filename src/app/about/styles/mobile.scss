@@ -3,6 +3,7 @@
 
 .about-container {
   background-color: $light-section-background;
+  box-shadow: 0 .1px .1px -.1px $gray;
   text-align: center;
 
   .about-header {

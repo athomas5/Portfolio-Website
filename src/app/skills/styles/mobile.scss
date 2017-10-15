@@ -1,0 +1,27 @@
+@import '../../shared-styles/sass';
+@import '../../shared-styles/mobile';
+
+.skills-container {
+  text-align: center;
+
+  .skills-header {
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+
+  .border-bottom {
+    border-bottom: solid 2px $dark-red;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 41px;
+  }
+
+  .skill-circle {
+    text-align: center;
+
+    .technology {
+      font-size: 19px;
+      padding-top: 20px;
+    }
+  }
+}
