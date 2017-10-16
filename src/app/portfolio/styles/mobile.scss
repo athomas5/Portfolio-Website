@@ -1,8 +1,7 @@
 @import '../../shared-styles/sass';
 @import '../../shared-styles/mobile';
 
-.skills-container {
-  box-shadow: $section-box-shadow;
+.portfolio-container {
   text-align: center;
 
   .header-wrapper {
@@ -11,12 +10,6 @@
     .border-bottom { @include border-bottom(); }
   }
 
-  .skill-circle {
-    text-align: center;
-
-    .technology {
-      font-size: 19px;
-      padding-top: 20px;
-    }
+  .projects-wrapper {
   }
 }

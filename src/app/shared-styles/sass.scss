@@ -4,14 +4,29 @@ $white: #fff;
 $light-section-background: #f7f3f7;
 $dark-red: #c0392b;
 $dark-blue: #2c3e50;
+$section-box-shadow: 0 .1px .1px -.1px $gray;
 
 // Viewports
 $viewport-tablet: 480px;
 $viewport-desktop: 1140px;
 
+// Mixins
+@mixin border-bottom() {
+  border-bottom: solid 2px $dark-red;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+// Global styles
 * {
-  font-weight: 300;
   color: $dark-blue;
+  font-weight: 300;
+}
+
+.section-header {
+  font-weight: 400;
+  padding-bottom: 20px;
 }
 
 a {

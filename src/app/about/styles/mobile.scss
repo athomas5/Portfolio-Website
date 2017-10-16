@@ -3,19 +3,13 @@
 
 .about-container {
   background-color: $light-section-background;
-  box-shadow: 0 .1px .1px -.1px $gray;
+  box-shadow: $section-box-shadow;
   text-align: center;
 
-  .about-header {
-    font-weight: 400;
-    padding-bottom: 20px;
-  }
+  .header-wrapper {
+    display: inline-block;
 
-  .border-bottom {
-    border-bottom: solid 2px $dark-red;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 80px;
+    .border-bottom { @include border-bottom(); }
   }
 
   .profile-picture {
