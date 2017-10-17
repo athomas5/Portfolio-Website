@@ -10,6 +10,27 @@
     .border-bottom { @include border-bottom(); }
   }
 
-  .projects-wrapper {
+  .project-wrapper {
+    .project {
+      // padding: 0;
+      padding-bottom: 20px;
+      height: 250px;
+    }
+  }
+
+  .image {
+    background-image: url('../../assets/images/profile-picture.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image2 {
+    background-image: url('../../assets/images/mountain-background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 }
