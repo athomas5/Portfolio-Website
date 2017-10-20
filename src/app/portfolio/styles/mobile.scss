@@ -2,6 +2,8 @@
 @import '../../shared-styles/mobile';
 
 .portfolio-container {
+  // overflow-x: hidden;
+  position: relative;
   text-align: center;
 
   .header-wrapper {
@@ -10,28 +12,42 @@
     .border-bottom { @include border-bottom(); }
   }
 
+  .portfolio-belt {
+    // background-color: #2ecc71;
+    // position: absolute;
+    // left: -50%;
+    // width: 200%;
+
+    // .buffer {
+    //   background-color: #e74c3c;
+    // }
+  }
+
   .project-wrapper {
     .project {
+      float: left;
       height: 225px;
       padding: 0;
+      width: 50%;
 
       .projectImage {
         background-position: center;
         background-size: cover;
         height: 100%;
-        max-width: 100%;
+        width: 100%;
         overflow: hidden;
         position: relative;
 
         .projectOverlay {
-          background: #2c3e50;
+          background: $dark-blue;
           height: 100%;
         	opacity: .9;
         	position: absolute;
         	text-align: center;
         	top: 100%;
-          transition-duration: .3s;
+          transition-duration: .5s;
           width: 100%;
+          left: 0;
 
           strong {
             color: white;
@@ -73,21 +89,5 @@
         background-image: url('../../assets/images/projects/safehouse.jpg');
       }
     }
-  }
-
-  .image {
-    background-image: url('../../assets/images/profile-picture.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-
-  .image2 {
-    background-image: url('../../assets/images/mountain-background.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
   }
 }

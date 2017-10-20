@@ -1,0 +1,20 @@
+@import '../../shared-styles/sass';
+@import '../../shared-styles/mobile';
+
+.portfolio-container {
+  .project-wrapper {
+    .project {
+      width: 30%;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        margin-left: 5%;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        margin-right: 5%;
+      }
+    }
+  }
+}
