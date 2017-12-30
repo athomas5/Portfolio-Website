@@ -1,8 +1,34 @@
 header {
+  .hamburger-icon {
+    display: none;
+  }
+
   .nav-bar {
-    .nav-link {
-      font-size: 16px;
-      margin-left: 20px;
+    width: auto;
+    height: auto;
+    right: 40px;
+    top: 40px !important;
+    background-color: transparent;
+    transition: none;
+
+    .close-icon {
+      display: none;
+    }
+
+    .nav-links {
+      margin-top: 0;
+
+      .nav-link {
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 20px;
+  
+        &:hover {
+          border-bottom: solid 2px $white;
+          padding-bottom: 4px;
+          color: $white;
+        }
+      }
     }
   }
 

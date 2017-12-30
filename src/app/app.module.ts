@@ -14,6 +14,7 @@ import { SkillCircleComponent } from './skill-circle/skill-circle.component';
 import { Project1Component } from './projects/project1/project1.component';
 import { Project2Component } from './projects/project2/project2.component';
 import { Project3Component } from './projects/project3/project3.component';
+import {SvgComponent } from './shared/components/svg/svg.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Project3Component } from './projects/project3/project3.component';
     SkillCircleComponent,
     Project1Component,
     Project2Component,
-    Project3Component
+    Project3Component,
+    SvgComponent
   ],
   imports: [
     BrowserModule,

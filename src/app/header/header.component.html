@@ -1,9 +1,18 @@
 <header>
-    <nav class="nav-bar">
-  	  <a href="#about-me" class="nav-link">About Me</a>
-  	  <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#education" class="nav-link">Education</a>
-  	  <a href="#contact" class="nav-link">Contact</a>
+    <div class="hamburger-icon" (click)="showNavBar()">
+      <app-svg [svgName]="'Hamburger'" [style]="'light'"></app-svg>
+    </div>
+    
+    <nav id="nav" class="nav-bar">
+      <div class="close-icon" (click)="closeNavBar()">
+        <app-svg [svgName]="'Close'" [style]="'light'"></app-svg>
+      </div>
+      <div class="nav-links">
+        <a href="#about-me" class="nav-link">About Me</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </nav>
 
     <div class="head-main">

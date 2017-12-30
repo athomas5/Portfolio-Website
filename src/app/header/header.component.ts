@@ -12,4 +12,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  showNavBar(): void {
+    let navBar = document.getElementById('nav');
+    navBar.style.top = '0';
+  }
+
+  closeNavBar(): void {
+    let navBar = document.getElementById('nav');
+    navBar.style.top = '-100%';
+  }
 }
