@@ -32,6 +32,10 @@ $viewport-desktop: 1140px;
   padding-bottom: 20px;
 }
 
+p {
+  font-size: 19px;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,4 +43,10 @@ a {
 section {
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+.clearfix:afterS {
+  content: "";
+  display: table;
+  clear: both;
 }

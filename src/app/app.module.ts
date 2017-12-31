@@ -14,6 +14,7 @@ import { Project2Component } from './projects/project2/project2.component';
 import { Project3Component } from './projects/project3/project3.component';
 import {SvgComponent } from './shared/components/svg/svg.component';
 import { SkillComponent } from './about/skill/skill.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SkillComponent } from './about/skill/skill.component';
     Project2Component,
     Project3Component,
     SvgComponent,
-    SkillComponent
+    SkillComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

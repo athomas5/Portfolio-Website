@@ -1,0 +1,36 @@
+.resume-container {
+    background-color: $light-section-background;
+    box-shadow: $section-box-shadow;
+    text-align: center;
+  
+    .header-wrapper {
+      display: inline-block;
+  
+      .border-bottom { @include border-bottom(); }
+    }
+
+    .resume-content {
+        margin: 0 5%;
+        text-align: left;
+
+        .work-section {
+            margin-bottom: 20px;
+        }
+
+        .resume-content-header {
+            font-weight: 600;
+        }
+
+        .position {
+            font-weight: 400;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            margin: 25px 0;
+            background-color: $dark-blue;
+            opacity: .3;
+        }
+    }
+}
