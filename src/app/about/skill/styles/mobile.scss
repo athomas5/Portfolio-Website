@@ -1,0 +1,32 @@
+.skill-bar-wrapper {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #e2e2e2;
+    text-align: right;
+    margin: 10px auto;
+
+    .precentage {
+        position: absolute;
+        right: 10px;
+        color: $gold;
+        font-weight: 700;
+    }
+
+    .skill-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 3px;
+        background-color: $gray;
+        text-align: left;
+
+        .language {
+            color: $white;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+    }
+}

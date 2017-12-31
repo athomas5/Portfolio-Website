@@ -18,11 +18,16 @@
     width: 180px;
   }
 
-  .about-text {
-    font-size: 19px;
-    margin: 40px auto;
-    max-width: 720px;
-    padding: 0 30px;
-    text-align: center;
+  .about-content {
+    padding: 40px;
+
+    .about-text {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .skills {
+      
+    }
   }
 }
