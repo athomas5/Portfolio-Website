@@ -9,7 +9,7 @@
     }
 
     .contact-content {
-        width: 60%;
+        width: 100%;
         max-width: 720px;
         margin: 0 auto;
 
@@ -45,6 +45,7 @@
             outline: none;
             font-weight: 700;
             letter-spacing: 2px;
+            border-radius: 5px;
 
             &:hover {
                 background-color: $dark-red;

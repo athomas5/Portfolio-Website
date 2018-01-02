@@ -16,6 +16,10 @@
             margin-bottom: 20px;
         }
 
+        .education-section {
+            margin-bottom: 30px;
+        }
+
         .resume-content-header {
             font-weight: 600;
         }
@@ -30,6 +34,24 @@
             margin: 25px 0;
             background-color: $dark-blue;
             opacity: .3;
+        }
+
+        .resume-button {
+            padding: 15px 25px;
+            float: right;
+            background-color: transparent;
+            color: $dark-blue;
+            border: 2px solid $dark-blue;
+            outline: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $dark-blue;
+                color: $white;
+                transition: .5s;
+            }
         }
     }
 }
