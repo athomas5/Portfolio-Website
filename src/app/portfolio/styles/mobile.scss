@@ -1,23 +1,13 @@
 .portfolio-container {
-  // overflow-x: hidden;
   position: relative;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 
   .header-wrapper {
     display: inline-block;
 
     .border-bottom { @include border-bottom(); }
-  }
-
-  .portfolio-belt {
-    // background-color: #2ecc71;
-    // position: absolute;
-    // left: -50%;
-    // width: 200%;
-
-    // .buffer {
-    //   background-color: #e74c3c;
-    // }
   }
 
   .project-wrapper {
@@ -36,11 +26,13 @@
         position: relative;
 
         .projectOverlay {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background: $dark-blue;
           height: 100%;
-        	opacity: .9;
+        	opacity: .7;
         	position: absolute;
-        	text-align: center;
         	top: 100%;
           transition-duration: .5s;
           width: 100%;
@@ -52,7 +44,7 @@
             font-size: 36px;
             font-weight: 300;
             line-height: 1.2;
-            padding: 50px 50px 5px;
+            padding: 0 20px;
           	text-transform: uppercase;
           }
         }

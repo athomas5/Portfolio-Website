@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { Project1Component } from './projects/project1/project1.component';
@@ -22,7 +21,6 @@ import { ResumeComponent } from './resume/resume.component';
     HeaderComponent,
     AboutComponent,
     PortfolioComponent,
-    EducationComponent,
     ContactComponent,
     FooterComponent,
     Project1Component,
