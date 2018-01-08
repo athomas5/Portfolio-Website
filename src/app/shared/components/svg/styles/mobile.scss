@@ -3,14 +3,18 @@ svg {
     width: 100%;
 }
   
-  .fill-light {
-    fill: $white;
+.light {
+  fill: $white;
   
-    g {
-      fill: $white;
-    }
+  g { fill: $white; }
   
-    path {
-      fill: $white;
-    }
-  }
+  path { fill: $white; }
+}
+
+.dark-blue {
+  fill: $dark-blue;
+  
+  g { fill: $dark-blue; }
+  
+  path { fill: $dark-blue; }
+}

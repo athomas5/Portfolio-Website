@@ -6,9 +6,9 @@ header {
   box-shadow: 0 5px 5px -5px $gray;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   position: relative;
+  height: 100vh;  
 
   .hamburger-icon {
     position: absolute;

@@ -3,12 +3,26 @@
     height: 100px;
     background: linear-gradient($lighter-gray-gradient, $light-gray-gradient), url('../../assets/images/mountain-background.jpg') center 20%;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
 
     .footer-content {
         .footer-link {
-            margin-left: 20px;
+            margin-right: 20px;
             color: $white;
             font-size: 16px;
+
+            &:hover {
+                border-bottom: solid 2px $white;
+                padding-bottom: 4px;
+            }
+        }
+
+        .copy-right {
+            color: $white;
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
 }

@@ -1,0 +1,11 @@
+.button-wrapper {
+    margin-top: 40px;
+
+    .button {
+        @include button($dark-blue);
+        width: 300px;
+
+        &:first-child { margin-right: 10px; }
+        &:last-child { margin-left: 10px; }
+    }
+}

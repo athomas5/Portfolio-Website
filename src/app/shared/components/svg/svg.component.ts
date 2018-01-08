@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-export type svgOption = 'Hamburger' | 'Close';
+export type svgOption = 'Hamburger' | 'Close' | 'Back';
 
 @Component({
   selector: 'app-svg',
@@ -9,7 +9,7 @@ export type svgOption = 'Hamburger' | 'Close';
 })
 export class SvgComponent implements OnInit {
   @Input() svgName: svgOption;
-  @Input() style: 'light';
+  @Input() style: 'light' | 'dark-blue';
 
   constructor() { }
 

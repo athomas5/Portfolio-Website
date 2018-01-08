@@ -3,52 +3,61 @@
     <h1 class="section-header">Portfolio</h1>
     <div class="border-bottom"></div>
   </div>
-  <div class="portfolio-belt">
+  <div #portfolioBelt class="portfolio-belt clearfix">
     <div class="project-wrapper">
-      <div class="row">
-        <div class="project">
-          <div class="projectImage projectImage1">
-            <div class="projectOverlay">
-              <strong>Twitter Clone</strong>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projectImage projectImage2">
-            <div class="projectOverlay">
-              <strong>Todo List</strong>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projectImage projectImage3">
-            <div class="projectOverlay">
-              <strong>Pong</strong>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projectImage projectImage4">
-            <div class="projectOverlay">
-              <strong>TicTacToe</strong>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projectImage projectImage5">
-            <div class="projectOverlay">
-              <strong>Twitter</strong>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projectImage projectImage6">
-            <div class="projectOverlay">
-              <strong>Safehouse Signs</strong>
-            </div>
+      <div class="project" (click)="this.project1Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage1">
+          <div class="projectOverlay">
+            <strong>Translation App</strong>
           </div>
         </div>
       </div>
+      <div class="project" (click)="this.project2Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage2">
+          <div class="projectOverlay">
+            <strong>Todo List</strong>
+          </div>
+        </div>
+      </div>
+      <div class="project" (click)="this.project3Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage3">
+          <div class="projectOverlay">
+            <strong>Pong</strong>
+          </div>
+        </div>
+      </div>
+      <div class="project" (click)="this.project4Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage4">
+          <div class="projectOverlay">
+            <strong>TicTacToe</strong>
+          </div>
+        </div>
+      </div>
+      <div class="project" (click)="this.project5Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage5">
+          <div class="projectOverlay">
+            <strong>Twitter</strong>
+          </div>
+        </div>
+      </div>
+      <div class="project" (click)="this.project6Active = true" (click)="showActiveProject()">
+        <div class="projectImage projectImage6">
+          <div class="projectOverlay">
+            <strong>Safehouse Signs</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-preview">
+      <div #backButton class="back-button" (click)="hideActiveProject()">
+        <app-svg [svgName]="'Back'" [style]="'dark-blue'"></app-svg>
+      </div>
+      <app-project *ngIf="this.project1Active" [repoName]="'Translation-Application'"></app-project>
+      <app-project *ngIf="this.project2Active" [repoName]="'Translation-Application'"></app-project>
+      <app-project *ngIf="this.project3Active" [repoName]="'Translation-Application'"></app-project>
+      <app-project *ngIf="this.project4Active" [repoName]="'Translation-Application'"></app-project>
+      <app-project *ngIf="this.project5Active" [repoName]="'Translation-Application'"></app-project>
+      <app-project *ngIf="this.project6Active" [repoName]="'Translation-Application'"></app-project>
     </div>
   </div>
 </section>

@@ -1,0 +1,9 @@
+<section>
+  <h1 class="section-header">{{this.repoName}}</h1>
+  <p class="description">{{this.description}}</p>
+  <img *ngIf="this.imageUrl" src="this.imageUrl" class="image">
+  <div class="button-wrapper">
+    <a href={{this.sourceCodeLink}} class="button" tarket="_blank">Source Code</a>
+    <a href={{this.demoLink}} class="button" tarket="_blank">Live Demo</a>
+  </div>
+</section>
