@@ -6,45 +6,39 @@
   <div #portfolioBelt class="portfolio-belt clearfix">
     <div class="project-wrapper">
       <div class="project" (click)="this.project1Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage1">
-          <div class="projectOverlay">
-            <strong>Translation App</strong>
-          </div>
+        <img class="project-image" src="../assets/images/projects/safehouse.jpg" alt="Safehouse Signs">
+        <div class="project-overlay">
+          <strong>Safehouse Signs</strong>
         </div>
       </div>
       <div class="project" (click)="this.project2Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage2">
-          <div class="projectOverlay">
-            <strong>Todo List</strong>
+          <img class="project-image" src="../assets/images/projects/twitter.png" alt="Twitter Clone">
+          <div class="project-overlay">
+            <strong>Twitter Clone</strong>
           </div>
-        </div>
       </div>
       <div class="project" (click)="this.project3Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage3">
-          <div class="projectOverlay">
-            <strong>Pong</strong>
-          </div>
+        <img class="project-image" src="../assets/images/projects/translation-app.png" alt="Tranlation App">
+        <div class="project-overlay">
+          <strong>Translation App</strong>
         </div>
       </div>
       <div class="project" (click)="this.project4Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage4">
-          <div class="projectOverlay">
-            <strong>TicTacToe</strong>
-          </div>
+        <img class="project-image" src="../assets/images/projects/todo.png" alt="Todo List">
+        <div class="project-overlay">
+          <strong>ToDo List</strong>
         </div>
       </div>
       <div class="project" (click)="this.project5Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage5">
-          <div class="projectOverlay">
-            <strong>Twitter</strong>
-          </div>
+        <img class="project-image" src="../assets/images/projects/pong.png" alt="Pong Game">
+        <div class="project-overlay">
+          <strong>Pong Game</strong>
         </div>
       </div>
       <div class="project" (click)="this.project6Active = true" (click)="showActiveProject()">
-        <div class="projectImage projectImage6">
-          <div class="projectOverlay">
-            <strong>Safehouse Signs</strong>
-          </div>
+        <img class="project-image" src="../assets/images/projects/safehouse.jpg" alt="Jefferson College of Health Sciences">
+        <div class="project-overlay">
+          <strong>Jefferson College of Health Sciences</strong>
         </div>
       </div>
     </div>
@@ -52,12 +46,46 @@
       <div #backButton class="back-button" (click)="hideActiveProject()">
         <app-svg [svgName]="'Back'" [style]="'dark-blue'"></app-svg>
       </div>
-      <app-project *ngIf="this.project1Active" [repoName]="'Translation-Application'"></app-project>
-      <app-project *ngIf="this.project2Active" [repoName]="'Translation-Application'"></app-project>
-      <app-project *ngIf="this.project3Active" [repoName]="'Translation-Application'"></app-project>
-      <app-project *ngIf="this.project4Active" [repoName]="'Translation-Application'"></app-project>
-      <app-project *ngIf="this.project5Active" [repoName]="'Translation-Application'"></app-project>
-      <app-project *ngIf="this.project6Active" [repoName]="'Translation-Application'"></app-project>
+
+      <!-- Safehouse Signs -->
+      <app-project *ngIf="this.project1Active" 
+        [repoName]="'Safehouse Signs'" 
+        [description]="'Worked with PHP and Wordpress while building the new eCommerce site for Safehouse Signs. Build the entire user registration and checkout process. Also worked on various frontend components while focusing on a responsive mobile first design.'"
+        [imageUrl]="'../assets/images/projects/safehouse.jpg'"
+        [demoLink]="'https://safehousesigns.com'">
+      </app-project>
+
+      <!-- Twitter Clone -->
+      <app-project *ngIf="this.project2Active" 
+        [repoName]="'Twitter-Clone'"
+        [imageUrl]="'../assets/images/projects/twitter.png'">
+      </app-project>
+
+      <!-- Translation App -->
+      <app-project *ngIf="this.project3Active" 
+        [repoName]="'Translation-App'"
+        [imageUrl]="'../assets/images/projects/translation-app.png'">
+      </app-project>
+      
+      <!-- ToDo -->
+      <app-project *ngIf="this.project4Active" 
+        [repoName]="'ToDo'"
+        [imageUrl]="'../assets/images/projects/todo.png'">
+      </app-project>
+      
+      <!-- Pong -->
+      <app-project *ngIf="this.project5Active" 
+        [repoName]="'PongGame'"
+        [imageUrl]="'../assets/images/projects/pong.png'">
+      </app-project>
+      
+      <!-- JCHS -->
+      <app-project *ngIf="this.project6Active" 
+        [repoName]="'Translation-Application'"
+        [description]="'Worked with Andular 2, PHP, and Drupal while building the new website for Jefferson College of Health Sciences. This project is currently still in progress and has not gone live yet'"
+        [imageUrl]="'../assets/images/projects/jchs.jpg'"
+        [demoLink]="'http://www.jchs.edu/'">
+      </app-project>
     </div>
   </div>
 </section>

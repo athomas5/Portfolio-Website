@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProjectComponent implements OnInit {
   @Input() repoName: string;
   @Input() imageUrl: string;
-  description: string;
-  sourceCodeLink: string;
-  demoLink: string;
+  @Input() description: string;
+  @Input() sourceCodeLink: string;
+  @Input() demoLink: string;
 
   constructor() { }
 
@@ -21,11 +21,13 @@ export class ProjectComponent implements OnInit {
   getData(): void {
     let url = 'https://api.github.com/repos/athomas5/' + this.repoName;
     fetch(url).then((res) => {
-      res.json().then((data) => {
-        this.description = data.description;
-        this.sourceCodeLink = data.html_url;
-        this.demoLink = 'https://' + this.repoName + '.herokuapp.com';
-      })
+      if (res.status === 200) {
+        res.json().then((data) => {
+          this.description = data.description;
+          this.sourceCodeLink = data.html_url;
+          this.demoLink = 'https://' + this.repoName + '.herokuapp.com';
+        })
+      }
     })
   }
 

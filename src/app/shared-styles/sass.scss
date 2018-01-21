@@ -66,6 +66,10 @@ section {
   padding: 0 $section-padding $section-padding;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .clearfix:after {
   content: "";
   display: table;

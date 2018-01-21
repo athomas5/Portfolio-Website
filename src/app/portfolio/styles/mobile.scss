@@ -14,7 +14,7 @@
   .portfolio-belt {
     width: 200%;
     position: relative;
-    left: -100%;
+    left: 0%;
     transition: 1s left ease;
 
     .project-preview {
@@ -25,7 +25,7 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        left: calc(50% + 90px);
+        left: calc(50% + 50px);
         top: $section-header-padding-top;
         cursor: pointer;
         opacity: .8;
@@ -51,67 +51,41 @@
       height: 200px;
       padding: 0;
       width: 50%;
+      overflow: hidden;
+      position: relative;
       cursor: pointer;
 
-      .projectImage {
-        background-position: center;
-        background-size: cover;
-        height: 100%;
+      &:hover .project-overlay {
+        top: 0%;
+      }
+
+      .project-image {
         width: 100%;
-        overflow: hidden;
-        position: relative;
+        height: 100%;
+      }
 
-        .projectOverlay {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: $dark-blue;
-          height: 100%;
-        	opacity: .7;
-        	position: absolute;
-        	top: 100%;
-          transition-duration: .5s;
-          width: 100%;
-          left: 0;
+      .project-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $dark-blue;
+        height: 100%;
+        opacity: .7;
+        position: absolute;
+        top: 100%;
+        transition-duration: .5s;
+        width: 100%;
+        left: 0;
 
-          strong {
-            color: white;
-          	display: block;
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 1.2;
-            padding: 0 20px;
-          	text-transform: uppercase;
-          }
+        strong {
+          color: white;
+          display: block;
+          font-size: 36px;
+          font-weight: 300;
+          line-height: 1.2;
+          padding: 0 20px;
+          text-transform: uppercase;
         }
-
-        &:hover .projectOverlay {
-          top: 0%;
-        }
-      }
-
-      .projectImage1 {
-        background-image: url('../../assets/images/projects/twitter.png');
-      }
-
-      .projectImage2 {
-        background-image: url('../../assets/images/projects/todo.png');
-      }
-
-      .projectImage3 {
-        background-image: url('../../assets/images/projects/pong.png');
-      }
-
-      .projectImage4 {
-        background-image: url('../../assets/images/projects/tictactoe.png');
-      }
-
-      .projectImage5 {
-        background-image: url('../../assets/images/projects/twitter.png');
-      }
-
-      .projectImage6 {
-        background-image: url('../../assets/images/projects/safehouse.jpg');
       }
     }
   }
