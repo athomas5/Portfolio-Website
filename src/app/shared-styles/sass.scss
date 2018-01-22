@@ -12,7 +12,8 @@ $lighter-gray-gradient: rgba(0, 0, 0, .3);
 // Viewports
 $viewport-tablet: 767px;
 $viewport-desktop: 1140px;
-$section-padding: 100px;
+$section-padding-mobile: 25px;
+$section-padding-tablet: 100px;
 $section-header-padding-top: 40px;
 $section-header-padding-bottom: 20px;
 
@@ -63,7 +64,11 @@ a {
 }
 
 section {
-  padding: 0 $section-padding $section-padding;
+  padding: 0 $section-padding-mobile $section-padding-mobile;
+
+  @media (min-width: $viewport-tablet) {
+    padding: 0 $section-padding-tablet $section-padding-tablet;
+  }
 }
 
 strong {
