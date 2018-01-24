@@ -10,6 +10,7 @@ export class ProjectComponent implements OnInit {
   @Input() imageUrl: string;
   @Input() description: string;
   @Input() sourceCodeLink: string;
+  @Input() sourceCodeAvailable: boolean;
   @Input() demoLink: string;
 
   constructor() { }

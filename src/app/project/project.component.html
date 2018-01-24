@@ -3,7 +3,7 @@
   <p class="description">{{this.description}}</p>
   <img *ngIf="this.imageUrl" src={{this.imageUrl}} class="image">
   <div class="button-wrapper">
-    <a href={{this.sourceCodeLink}} class="button" target="_blank">Source Code</a>
+    <a *ngIf="this.sourceCodeAvailable" href={{this.sourceCodeLink}} class="button" target="_blank">Source Code</a>
     <a href={{this.demoLink}} class="button" target="_blank">Live Demo</a>
   </div>
 </section>
