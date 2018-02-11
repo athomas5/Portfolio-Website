@@ -25,7 +25,7 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        left: calc(50% + 50px);
+        left: calc(50% + 25px);
         top: $section-header-padding-top;
         cursor: pointer;
         opacity: .8;
@@ -54,6 +54,10 @@
       overflow: hidden;
       position: relative;
       cursor: pointer;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
 
       &:hover .project-overlay {
         top: 0%;

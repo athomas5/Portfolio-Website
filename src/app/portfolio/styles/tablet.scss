@@ -1,4 +1,12 @@
 .portfolio-container {
+  .portfolio-belt {
+    .project-preview {
+      .back-button {
+        left: calc(50% + 100px);
+      }
+    }
+  }
+
   .project-wrapper {
     .project {
       width: 33.33333333%;

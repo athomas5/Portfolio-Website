@@ -7,6 +7,8 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   @ViewChild('portfolioBelt') portfolioBelt: ElementRef;
+  @ViewChild('projectWrapper') projectWrapper: ElementRef;
+  @ViewChild('projectPreview') projectPreview: ElementRef;
   @ViewChild('backButton') backButton: ElementRef;
   project1Active: boolean = false;
   project2Active: boolean = false;
@@ -22,7 +24,10 @@ export class PortfolioComponent implements OnInit {
 
   hideActiveProject() {
     this.portfolioBelt.nativeElement.style.left = '0%';
+    this.projectWrapper.nativeElement.style.display = 'block';
+
     setTimeout(() => {
+      this.projectPreview.nativeElement.style.display = 'none';
       this.project1Active = false;
       this.project2Active = false;
       this.project3Active = false;
@@ -34,5 +39,10 @@ export class PortfolioComponent implements OnInit {
 
   showActiveProject(): void {
     this.portfolioBelt.nativeElement.style.left = '-100%';
+    this.projectPreview.nativeElement.style.display = 'block';
+
+    setTimeout(() => {
+      this.projectWrapper.nativeElement.style.display = 'none';
+    }, 1000);
   }
 }

@@ -11,7 +11,8 @@ export class ProjectComponent implements OnInit {
   @Input() description: string;
   @Input() sourceCodeLink: string;
   @Input() sourceCodeAvailable: boolean;
-  @Input() demoLink: string;
+  @Input() demoAvailable: boolean;
+  @Input() demoLink: string; 
 
   constructor() { }
 
